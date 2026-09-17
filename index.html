@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#170f16">
+<title>Для Юли ♡ — от Вадима</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+
+:root{
+  --bg:#120d12; --card:rgba(255,248,248,.08); --line:rgba(255,255,255,.13);
+  --text:#fff7f7; --muted:#d7c7cd; --pink:#f4a9bd; --rose:#e982a1;
+  --shadow:0 25px 70px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; color:var(--text); background:
+  radial-gradient(circle at 15% 10%, rgba(221,117,148,.18), transparent 32%),
+  radial-gradient(circle at 85% 28%, rgba(165,92,133,.14), transparent 30%),
+  linear-gradient(180deg,#120d12 0%,#1a1018 48%,#100b10 100%);
+  font-family:Manrope,system-ui,sans-serif; overflow-x:hidden;
+}
+body:before{
+  content:""; position:fixed; inset:0; pointer-events:none; opacity:.08;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E");
+  mix-blend-mode:screen;
+}
+a{color:inherit}
+.wrap{width:min(1080px,92%);margin:auto}
+.hero{min-height:100svh;display:grid;place-items:center;position:relative;padding:48px 0 80px}
+.hero-inner{text-align:center;max-width:820px;position:relative;z-index:2}
+.eyebrow{letter-spacing:.22em;text-transform:uppercase;font-size:11px;color:#e9cbd4;margin-bottom:18px}
+h1,h2,h3,.serif{font-family:"Cormorant Garamond",Georgia,serif}
+h1{font-size:clamp(58px,12vw,130px);line-height:.82;margin:0 0 26px;font-weight:500}
+.hero p{font-size:clamp(16px,2.4vw,21px);color:var(--muted);line-height:1.7;max-width:650px;margin:0 auto}
+.cta{margin-top:32px;display:inline-flex;align-items:center;gap:10px;padding:15px 23px;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(255,255,255,.08);backdrop-filter:blur(12px);text-decoration:none;font-weight:600;transition:.25s}
+.cta:hover{transform:translateY(-2px);background:rgba(255,255,255,.13)}
+.scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);font-size:11px;color:#ad9da5;letter-spacing:.15em}
+.heart{display:inline-block;color:var(--pink);animation:pulse 1.8s infinite}
+@keyframes pulse{50%{transform:scale(1.15)}}
+.petals span{position:fixed;top:-30px;font-size:18px;opacity:.55;z-index:5;pointer-events:none;animation:fall linear infinite}
+@keyframes fall{to{transform:translate3d(90px,110vh,0) rotate(300deg)}}
+
+section{padding:100px 0}
+.kicker{color:var(--pink);font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.title{font-size:clamp(40px,7vw,72px);line-height:.95;margin:10px 0 22px;font-weight:500}
+.lead{color:var(--muted);line-height:1.85;max-width:700px;font-size:16px}
+.letter{
+  padding:clamp(26px,6vw,58px); border:1px solid var(--line); border-radius:32px;
+  background:linear-gradient(135deg,rgba(255,255,255,.10),rgba(255,255,255,.035));
+  box-shadow:var(--shadow); backdrop-filter:blur(18px); position:relative; overflow:hidden;
+}
+.letter:after{content:"♡";position:absolute;right:25px;top:10px;font-family:serif;font-size:150px;color:rgba(244,169,189,.07)}
+.letter p{font-family:"Cormorant Garamond",serif;font-size:clamp(23px,3.5vw,31px);line-height:1.45;margin:18px 0;color:#fff8f9}
+.signature{text-align:right;color:var(--muted);font-family:"Cormorant Garamond",serif;font-size:24px;margin-top:30px}
+
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:35px}
+.gallery figure{margin:0;overflow:hidden;border-radius:22px;position:relative;background:#20151d;border:1px solid rgba(255,255,255,.08);box-shadow:0 14px 45px rgba(0,0,0,.22)}
+.gallery img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .7s ease}
+.gallery figure:hover img{transform:scale(1.035)}
+.g1{grid-column:span 5;height:510px}.g2{grid-column:span 3;height:510px}.g3{grid-column:span 4;height:510px}
+.g4{grid-column:span 4;height:390px}.g5{grid-column:span 4;height:390px}.g6{grid-column:span 4;height:390px}
+.g7{grid-column:span 3;height:430px}.g8{grid-column:span 4;height:430px}.g9{grid-column:span 5;height:430px}
+.caption{position:absolute;left:14px;bottom:14px;padding:8px 11px;border-radius:999px;background:rgba(10,7,10,.45);backdrop-filter:blur(8px);font-size:11px;color:#fff}
+
+.reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:32px}
+.reason{min-height:190px;padding:26px;border:1px solid var(--line);border-radius:25px;background:var(--card);transition:.25s}
+.reason:hover{transform:translateY(-4px);background:rgba(255,255,255,.11)}
+.num{font-family:"Cormorant Garamond";font-size:35px;color:var(--pink)}
+.reason h3{font-size:25px;margin:10px 0 8px}.reason p{color:var(--muted);line-height:1.65;margin:0;font-size:14px}
+
+.video-card{margin-top:32px;overflow:hidden;border-radius:30px;border:1px solid var(--line);background:#09070a;box-shadow:var(--shadow)}
+.video-card video{display:block;width:100%;max-height:650px;object-fit:cover}
+.video-note{padding:20px 24px;color:var(--muted);font-size:13px}
+
+.music{
+  display:flex;align-items:center;gap:18px;padding:22px;border:1px solid var(--line);border-radius:24px;
+  background:linear-gradient(135deg,rgba(244,169,189,.12),rgba(255,255,255,.04)); margin-top:30px
+}
+.disc{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#f5d6df 0 8%,#9c4f70 9% 18%,#28141e 19% 100%);box-shadow:0 0 0 8px rgba(255,255,255,.04);animation:spin 6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.music strong{display:block}.music small{color:var(--muted)}
+.music button{margin-left:auto;border:0;border-radius:999px;padding:12px 18px;background:#f2a6bb;color:#2a111a;font-weight:700;cursor:pointer}
+
+.final{text-align:center;padding:130px 0 150px}
+.final h2{font-size:clamp(52px,9vw,92px);line-height:.9;margin:12px 0 24px}
+.final p{color:var(--muted);max-width:620px;margin:auto;line-height:1.8}
+.big-heart{font-size:64px;margin-top:28px;display:inline-block;animation:pulse 1.8s infinite}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.reveal.show{opacity:1;transform:none}
+
+@media(max-width:760px){
+  section{padding:72px 0}
+  .hero{padding-top:30px}
+  .gallery{display:grid;grid-template-columns:1fr 1fr}
+  .gallery figure{height:260px!important}
+  .g1,.g2,.g3,.g4,.g5,.g6,.g7,.g8,.g9{grid-column:span 1}
+  .g1{grid-column:span 2;height:420px!important}
+  .g9{grid-column:span 2}
+  .reasons{grid-template-columns:1fr}
+  .reason{min-height:auto}
+  .music{align-items:flex-start;flex-wrap:wrap}
+  .music button{margin-left:0}
+}
+</style>
+</head>
+<body>
+<div class="petals" aria-hidden="true">
+  <span style="left:8%;animation-duration:12s;animation-delay:-2s">♡</span>
+  <span style="left:22%;animation-duration:16s;animation-delay:-8s">✦</span>
+  <span style="left:41%;animation-duration:13s;animation-delay:-4s">♡</span>
+  <span style="left:63%;animation-duration:18s;animation-delay:-11s">✧</span>
+  <span style="left:82%;animation-duration:14s;animation-delay:-6s">♡</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">маленький сайт от Вадима для Юли</div>
+    <h1>Для тебя,<br><span class="heart">Юля</span> ♡</h1>
+    <p>Я собрал здесь несколько моментов, которые хочется сохранить. Потому что некоторые истории слишком красивые, чтобы оставлять их только в галерее телефона.</p>
+    <a class="cta" href="#letter">Открыть письмо&nbsp; ↓</a>
+  </div>
+  <div class="scroll">ЛИСТАЙ МЕДЛЕННО</div>
+</header>
+
+<main>
+<section id="letter">
+  <div class="wrap reveal">
+    <div class="kicker">01 — письмо</div>
+    <h2 class="title">Несколько слов<br>тебе</h2>
+    <div class="letter">
+      <p>Юля, я не знаю, можно ли уместить в один сайт всё то, что я чувствую к тебе. Но я точно знаю одно — рядом с тобой даже самые обычные моменты становятся особенными.</p>
+      <p>Спасибо тебе за наши смешные фотографии, за объятия, за поцелуи, за наши прогулки и за то, что ты просто есть в моей жизни.</p>
+      <p>Пусть этот маленький подарок иногда напоминает тебе, насколько ты мне дорога.</p>
+      <div class="signature">Твой Вадим ♡</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap reveal">
+    <div class="kicker">02 — мы</div>
+    <h2 class="title">Наша маленькая<br>кинолента</h2>
+    <p class="lead">Не идеальная, не постановочная — зато настоящая. Именно такие фотографии я люблю больше всего.</p>
+    <div class="gallery">
+      <figure class="g1"><img src="assets/photo-01.jpeg"><span class="caption">просто мы ♡</span></figure>
+      <figure class="g2"><img src="assets/photo-02.jpeg"><span class="caption">тихий момент</span></figure>
+      <figure class="g3"><img src="assets/photo-03.jpeg"><span class="caption">два смешных человека</span></figure>
+      <figure class="g4"><img src="assets/photo-04.jpeg"><span class="caption">вместе</span></figure>
+      <figure class="g5"><img src="assets/photo-05.jpeg"><span class="caption">тот самый день</span></figure>
+      <figure class="g6"><img src="assets/photo-06.jpeg"><span class="caption">♡</span></figure>
+      <figure class="g7"><img src="assets/photo-07.jpeg"><span class="caption">твоя рука</span></figure>
+      <figure class="g8"><img src="assets/photo-08.jpeg"><span class="caption">ещё один кадр</span></figure>
+      <figure class="g9"><img src="assets/photo-09.jpeg"><span class="caption">и пусть таких будет ещё тысяча</span></figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap reveal">
+    <div class="kicker">03 — воспоминание</div>
+    <h2 class="title">Один из тех<br>дней, которые помнятся</h2>
+    <div class="video-card">
+      <video controls playsinline preload="metadata" poster="assets/photo-05.jpeg">
+        <source src="assets/our-video.mp4" type="video/mp4">
+      </video>
+      <div class="video-note">Нажми play. Иногда несколько секунд видео говорят больше, чем длинное письмо.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap reveal">
+    <div class="kicker">04 — почему ты</div>
+    <h2 class="title">Не знаю, как посчитать<br>всё, что люблю</h2>
+    <div class="reasons">
+      <article class="reason"><div class="num">01</div><h3>Твоя улыбка</h3><p>Потому что после неё почему-то всегда становится немного теплее.</p></article>
+      <article class="reason"><div class="num">02</div><h3>Наш юмор</h3><p>Даже самые странные наши фотографии почему-то становятся любимыми.</p></article>
+      <article class="reason"><div class="num">03</div><h3>Твои объятия</h3><p>Есть места, в которых хочется задержаться. Для меня одно из них — рядом с тобой.</p></article>
+      <article class="reason"><div class="num">04</div><h3>Наши моменты</h3><p>От катка до обычного зеркала — я люблю нашу историю такой, какая она есть.</p></article>
+      <article class="reason"><div class="num">05</div><h3>Тебя настоящую</h3><p>Без идеальных поз и красивых фильтров. Именно тебя.</p></article>
+      <article class="reason"><div class="num">06</div><h3>Потому что ты — ты</h3><p>И, наверное, это самая главная причина, которую невозможно красиво объяснить.</p></article>
+    </div>
+
+    <div class="music">
+      <div class="disc">♡</div>
+      <div>
+        <strong>Наша песня</strong>
+        <small>«Кинолента» — Miyagi</small>
+      </div>
+      <button id="musicBtn" type="button">♡ Включить</button>
+    </div>
+    <audio id="song" preload="none"></audio>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap reveal">
+    <div class="kicker">05 — самое главное</div>
+    <h2>Я выбираю<br><span class="heart">тебя</span>.</h2>
+    <p>Спасибо за то, что наша история существует. Я хочу, чтобы впереди у нас было ещё очень много фотографий, поездок, объятий, глупых лиц и моментов, о которых однажды мы будем говорить: «Помнишь?»</p>
+    <div class="big-heart">♡</div>
+    <div class="signature">С любовью, Вадим</div>
+  </div>
+</section>
+</main>
+
+<script>
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('show'); });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+const btn=document.getElementById('musicBtn');
+const song=document.getElementById('song');
+let ready=false;
+btn.addEventListener('click',()=>{
+  if(!ready){
+    alert('Чтобы музыка играла прямо на сайте, положи рядом с папкой assets свой файл песни и назови его "song.mp3". Затем обнови страницу ❤️');
+    return;
+  }
+  if(song.paused){song.play();btn.textContent='Ⅱ Пауза';}
+  else{song.pause();btn.textContent='♡ Включить';}
+});
+</script>
+</body>
+</html>
